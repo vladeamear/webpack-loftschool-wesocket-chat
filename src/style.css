@@ -1,8 +1,12 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: var(--blue-900);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .hidden {

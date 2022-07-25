@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <title>Websocket chat</title>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="./src/style/colors.css">
+  <link rel="stylesheet" href="./src/style/fonts.css">
+  <link rel="stylesheet" href="./src/style/button.css">
+  <link rel="stylesheet" href="./src/style/login.css">
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
   
-  <div id="login" class="hidden">
-
+  <div id="login" class="login__wrapper">
+    <div class="login__img"></div>
+    <h2 class="login__title">Авторизация</h2>
+    <p class="login__text">Введите пожалуйста свой ник для<br />дальнейшей авторизации</p>
+    <input type="text" name="nickname" id="nickname" placeholder="Введите свой ник" class="login__input">
+    <input type="button" value="Войти" id="login_submit" class="button button__primary">
   </div>
   
   <div id="chat" class="hidden">

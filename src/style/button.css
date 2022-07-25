@@ -1,0 +1,41 @@
+.button {
+  border: none;
+  background: none;
+  border-radius: 2px;
+  padding: 10px 10px 9px 10px;
+  color: var(--text-accent-100);
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.button__save {
+  background-color: var(--blue-700);
+}
+
+.button__primary,
+.button__send {
+  border-radius: 5px;
+  background-color: var(--blue-300);
+  color: var(--text-primary-100);
+  transition: background-color .1s ease-in-out;
+}
+
+.button__primary:hover,
+.button__send:hover {
+  border-radius: 5px;
+  background-color: var(--blue-500);
+  color: var(--text-primary-100);
+}
+
+.button__primary {
+  padding: 13px 40px;
+}
+
+.button__send {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 6px 20px;
+  text-transform: none;
+}
