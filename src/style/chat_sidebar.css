@@ -1,0 +1,61 @@
+.chat__sidebar {
+  min-width: 263px;
+  width: 30%;
+  background-color: var(--blue-800);
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border-right: 1px solid var(--blue-900);
+}
+
+.chat__sidebar_menu {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../static/menu.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+
+.chat__sidebar_userlist {
+  max-height: calc(100% - 36px);
+  box-sizing: border-box;
+  padding-top: 4px;
+  overflow: auto;
+}
+
+
+.sidebar__user {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.sidebar__user_avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.sidebar__user_info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sidebar__user_info_name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-accent-200);
+}
+
+.sidebar__user_info_lastmassage {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-primary-600);
+}

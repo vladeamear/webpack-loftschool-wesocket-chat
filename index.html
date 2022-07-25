@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="./src/style/fonts.css">
   <link rel="stylesheet" href="./src/style/button.css">
   <link rel="stylesheet" href="./src/style/login.css">
+  <link rel="stylesheet" href="./src/style/chat.css">
+  <link rel="stylesheet" href="./src/style/chat_sidebar.css">
+  <link rel="stylesheet" href="./src/style/chat_main.css">
+  <link rel="stylesheet" href="./src/style/chat_modal.css">
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
   
-  <div id="login" class="login__wrapper">
+  <div id="login" class="hidden login__wrapper">
     <div class="login__img"></div>
     <h2 class="login__title">Авторизация</h2>
     <p class="login__text">Введите пожалуйста свой ник для<br />дальнейшей авторизации</p>
@@ -20,8 +24,61 @@
     <input type="button" value="Войти" id="login_submit" class="button button__primary">
   </div>
   
-  <div id="chat" class="hidden">
+  <div id="chat" class="chat__wrapper">
+    <div class="chat__sidebar">
 
+      <input type="button" class="chat__sidebar_menu">
+
+      <div class="chat__sidebar_userlist">
+        
+        <div class="sidebar__user">
+          <img src="./src/static/blank-user.png" alt="Boroda23" class="sidebar__user_avatar">
+          <div class="sidebar__user_info">
+            <span class="sidebar__user_info_name">Boroda23</span>
+            <span class="sidebar__user_info_lastmassage">Рад был пообщаться</span>
+          </div>
+        </div>
+        
+        <div class="sidebar__user">
+          <img src="./src/static/blank-user.png" alt="Boroda23" class="sidebar__user_avatar">
+          <div class="sidebar__user_info">
+            <span class="sidebar__user_info_name">Boroda23</span>
+            <span class="sidebar__user_info_lastmassage">Рад был пообщаться</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="chat__main">
+      <div class="chat__main_top"></div>
+      <div class="chat__main_middle"></div>
+      <div class="chat__main_bottom"></div>
+    </div>
+  </div>
+
+  <div id="chat_modal" class="chat_modal__bg hidden">
+    <div class="chat_modal__wrapper">
+
+      <input type="button" id="close_modal" class="chat_modal__close">
+
+      <p class="chat_modal__text">Загрузка фото</p>
+      <div class="chat_modal__upload">
+        <input
+          type="file"
+          name="new_avatar"
+          id="new_avatar"
+          accept="image/png, image/jpg, image/gif, image/jpeg"
+          class="hidden"
+        >
+        <label for="new_avatar" class="chat_modal__upload_btn"></label>
+        <p class="chat_modal__text">Nik</p>
+      </div>
+
+      <input type="button" value="Выйти" class="button button__save">
+
+    </div>
   </div>
 
 </body>

@@ -1,0 +1,16 @@
+.chat__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__main_top,
+.chat__main_bottom {
+  background-color: var(--blue-800);
+  height: 56px;
+  width: 100%;
+}
+
+.chat__main_middle {
+  height: calc(100% - 56px * 2);
+}
