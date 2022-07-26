@@ -9,8 +9,120 @@
   background-color: var(--blue-800);
   height: 56px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .chat__main_middle {
   height: calc(100% - 56px * 2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chat__main_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-primary-100);
+  margin: 0;
+}
+
+/* chat__main_top */
+.chat__main_top {
+  padding: 13px 16px 9px;
+}
+.chat__main_text_users_number {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--text-primary-600);
+  margin-bottom: 0;
+  margin-top: 4px;
+}
+
+/* chat__main_middle */
+.chat__main_middle {
+  padding-inline: 10px;
+  overflow: auto;
+}
+.user_messages__wrapper {
+  margin-top: 17px;
+  display: flex;
+  gap: 10px;
+}
+.user_messages__avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-top: 22px;
+}
+.user_messages__nickname {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--text-accent-200);
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+.user_messages__message {
+  padding: 8px 55px 10px 16px;
+  background-color: var(--blue-400);
+  border-radius: 5px;
+  position: relative;
+  width: fit-content;
+  max-width: 70%;
+}
+.user_messages__message:not(:last-child) {
+  margin-bottom: 4px;
+}
+.user_messages__message_time {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-primary-600);
+  position: absolute;
+  margin: 0;
+  bottom: 4px;
+  right: 7px;
+}
+
+.user_messages-self {
+  flex-direction: row-reverse;
+}
+.user_messages-self .user_messages__right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.user_messages-self .user_messages__message {
+  background-color: var(--blue-350);
+}
+
+
+/* chat__main_bottom */
+.chat__main_bottom {
+  padding-inline: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat__input {
+  border: none;
+  background: none;
+  color: var(--text-primary-100);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.chat__input,
+.chat__input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.chat__input::placeholder {
+  color: var(--text-primary-700);
+}
+.chat__input:focus {
+  outline: none;
 }
